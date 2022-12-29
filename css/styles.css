@@ -1,15 +1,21 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    background: #FFFFFF;
-    color: rgba(0, 0, 0, 8);
+    font-family: 'Roboto', sans-serif;
+    background: var(--body-color);
+    color: var(--body-text-color);
 }
 
 :root {
     --header-bg-color: #2E2F42;
     --hero-bg-color: #2E2F42;
     --our-team-bg-color: #F4F4FD;
-
+    --btn-color: #4D5AE5;
+    --btn-hover-color: #404BBF;
+    --body-color: #FFF;
+    --body-text-color: #000000FF;
+    --hero-text-color: #434455;
+    --border-btn-color: #E7E9FC;
 }
+
 
 
 .list {
@@ -39,14 +45,13 @@ body {
 
 .header-btn {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #4D5AE5;
+    color: var(--body-color);
+    background: var(--btn-color);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -56,8 +61,8 @@ body {
 }
 
 .header-btn:hover {
-    background: #F4F4FD;
-    color: #4D5AE5;
+    background: var(--btn-hover-color);
+    color: var(--body-color);
 }
 
 
@@ -66,12 +71,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--header-bg-color);
 }
 
 .hedear-link:hover,
 .header-link:focus {
-    color: #4D5AE5;
+    color: var(--btn-color);
 }
 
 .header-nav {
@@ -85,25 +90,29 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--hero-text-color);
 }
 
 .hero-titel {
     font-weight: 600;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--body-color);
 }
 
 .hero-after{
     background-color: var(--our-team-bg-color);
 }
 
+h2.hero-pre-titel {
+    text-transform: capitalize;
+}
+
 .header-email:hover,
 .header-email:focus {
-    color: #4D5AE5
+    color: var(--btn-color);
 }
 
 .header-tel {
@@ -111,12 +120,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--hero-text-color);
 }
 
 .header-tel:hover,
 .header-tel:focus {
-    color: #4D5AE5
+    color: var(--btn-color);
 }
 
 .visually-hidden {
@@ -149,21 +158,21 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: var(--btn-color);
     cursor: pointer;
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    background: var(--our-team-bg-color);
+    border: 1px solid var(--border-btn-color);
     border-radius: 4px;
 
 }
 
 .main-btn:hover {
-    background: #404BBF;
-    color: #ffffff;
+    background: var(--btn-hover-color);
+    color: var(--body-color);
 }
 
 .main-btn:focus {
-    color: #ffffff;
+    color: var(--body-color);
 }
 
 /*-----------HERO-----------*/
@@ -189,7 +198,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--header-bg-color);
 }
 
 
@@ -198,54 +207,55 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--hero-text-color);
 }
 
 .hero-item {
     cursor: pointer;
-    border: 0.5px solid #F4F4FD;
+    border: 0.5px solid var(--our-team-bg-color);
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .footer {
-    background: #2E2F42;
+    background: var(--header-bg-color);
 }
 
 .footer-logo {
 }
 
 .footer-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--border-btn-color);
 }
 
 
 .hero-pri-titel {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--header-bg-color);
 }
 
 .hero-pro-text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    /*font-family: 'Roboto', sans-serif;*/
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--hero-text-color);
 }
 
 .hero-pre-item {
-    background: #FFFFFF;
+    background: var(--body-color);
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
 
+}
+
+a.hero-item-link {
+    text-decoration: none;
 }
